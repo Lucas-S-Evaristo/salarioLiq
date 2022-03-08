@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/salBruto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite o salário bruto" />
+
+        <EditText
+            android:id="@+id/cpSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/dependentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite o número de dependentes" />
+
+        <EditText
+            android:id="@+id/cpDependentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/plnSaude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plano de saúde" />
+
+        <RadioGroup
+            android:id="@+id/rgSaude"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdStandart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standart" />
+
+            <RadioButton
+                android:id="@+id/rdBasico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Básico" />
+
+            <RadioButton
+                android:id="@+id/rdSuper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Super" />
+
+            <RadioButton
+                android:id="@+id/rdMaster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Master" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/vlTransporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vale Transporte" />
+
+        <RadioGroup
+            android:id="@+id/rgVT"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/simVT"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:text="SIM" />
+
+            <RadioButton
+                android:id="@+id/naoVT"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="NÃO" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/vlAlimentacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vale Alimentação" />
+
+        <RadioGroup
+            android:id="@+id/rgVA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/simVA"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:text="SIM" />
+
+            <RadioButton
+                android:id="@+id/naoVA"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:text="NÃO" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/vlRefeicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vale Refeição" />
+
+        <RadioGroup
+            android:id="@+id/rgVR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/simVR"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="SIM" />
+
+            <RadioButton
+                android:id="@+id/naoVR"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="NÃO" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/bt_limpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/limpar" />
+
+        <TextView
+            android:id="@+id/textoSalBruto"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="Salário Bruto" />
+
+        <EditText
+            android:id="@+id/mostraSalBruto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textoDescontos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descontos" />
+
+        <EditText
+            android:id="@+id/mostraDescontos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textoSalLiq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salário Liquido" />
+
+        <EditText
+            android:id="@+id/mostraSalLiq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

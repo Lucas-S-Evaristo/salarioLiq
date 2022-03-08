@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">app-salario-liq</string>
+    <string name="cpSalario">Salario</string>
+    <string name="cpDependentes">Depedentes</string>
+    <string name="valida_salario">Informe o Salario</string>
+    <string name="valida_dependentes">Informe os Dependentes</string>
+    <string name="mostraSalBruto">mostraSalBruto</string>
+    <string name="mostraDescontos">mostraDescontos</string>
+    <string name="mostraSalLiq">mostraSalLiq</string>
+    <string name="rgSaude">rgSaude</string>
+    <string name="rdStandart">Standart</string>
+    <string name="rdBasico">Básico</string>
+    <string name="rdSuper">Super</string>
+    <string name="rdMaster">Master</string>
+    <string name="rgVT">rgVT</string>
+    <string name="simVT">simVT</string>
+    <string name="naoVT">naoVT</string>
+    <string name="rgVA">rgVA</string>
+    <string name="simVA">simVA</string>
+    <string name="naoVA">naoVA</string>
+    <string name="rgVR">rgVR</string>
+    <string name="simVR">simVR</string>
+    <string name="naoVR">naoVR</string>
+    <string name="irrf">irrf</string>
+    <string name="limpar">Limpar</string>
+
+</resources>
